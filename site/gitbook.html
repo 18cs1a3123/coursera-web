@@ -12,6 +12,10 @@
       p.big{
         font-size:20px;
       }
+      article > p{
+        color:purple;
+        font-size:18px;
+      }
     </style>
   </head>
   <body>
@@ -37,5 +41,22 @@ a problem, who introduced an issue and when, and more. Using a VCS also generall
 you screw things up or lose files, you can easily recover. In addition, you get all this for very little
 overhead.
     </div>
+    <h2>Local version control system</h2>
+    <article>
+      <p>Many people’s version-control method of choice is to copy files into another directory (perhaps a
+time-stamped directory, if they’re clever). This approach is very common because it is so simple, but
+it is also incredibly error prone. It is easy to forget which directory you’re in and accidentally write
+to the wrong file or copy over files you don’t mean to.</p>
+    </article>
+    <p>To deal with this issue, programmers long ago developed local VCSs that had a simple database that
+kept all the changes to files under revision control.</p>
+<article>
+  <div>
+    <p>One of the most popular VCS tools was a system called RCS, which is still distributed with many
+computers today. RCS works by keeping patch sets (that is, the differences between files) in a special
+format on disk; it can then re-create what any file looked like at any point in time by adding up all
+the patches.</p>
+  </div>
+</article>
   </body>
 </html>
