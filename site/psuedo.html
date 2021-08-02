@@ -1,0 +1,70 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Psuedo Class Selectors</title>
+		<style>
+			header li {
+				list-style: none;
+			}
+			a:link, a.visited{
+				text-decoration: none;
+				background-color: aqua;
+				color:black;
+				border: 1px solid blue;
+				display: block;
+				width: 200px;
+				text-align: center;
+				margin-bottom: 1px;
+			}
+			h1{
+				color: coral;
+				text-align: center;
+				text-decoration: underline;
+				background-color: beige;
+				border: 2px solid;
+			}
+			a:hover, a:active{
+				background-color: green;
+				color: maroon;
+			}
+			header li:nth-child(3){
+				font-size: 22px;
+			}
+			section div:nth-child(odd){
+				background-color: grey;
+			}
+			section div:nth-child(even){
+				background-color: beige;
+			}
+			section div:nth-child(4):hover{
+				background-color: green;
+				cursor: pointer;
+			}
+			section div{
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+	<h1>Using Psuedo Selectors</h1>
+	<header>
+		<ul>
+			<li><a href="https://www.google.com/">Click here for google</a></li>
+			<li><a href="https://www.facebook.com/">Click here for facebook</a></li>
+			<li><a href="https://github.com/login">Click here for github</a></li>
+		</ul>
+	</header>
+	<section>
+		<div>Div 1</div>
+		<div>Div 2</div>
+		<div>Div 3</div>
+		<div>Div 4</div>
+		<div>Div 5</div>
+		<div>Div 6</div>
+		<div>Div 7</div>
+		<div>Div 8</div>
+		<div>Div 9</div>
+		<div>Div 10</div>
+	</section>
+	</body>
+	</html>
