@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Styling Text</title>
+	<style>
+		h1{
+			color: green;
+			text-align: center;
+			text-decoration: underline;
+			text-transform: uppercase;
+		}
+		.style{
+			font-family: Centaur, Arial, sans-serif;
+			color: #0000ff;
+			<!-- background-color: black; -->
+			font-style: italic;
+			font-weight: bold; 
+			<!-- a number can also be used in place of bold -->
+			font-size: 24px;
+			text-transform: capitalize;
+			text-align: justify;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>What is Git?</h1>
+	<p>Git doesn’t think of or store its data this way. Instead, Git thinks of its data more like a series of
+snapshots of a miniature filesystem. With Git, every time you commit, or save the state of your
+project, Git basically takes a picture of what all your files look like at that moment and stores a
+reference to that snapshot. To be efficient, if files have not changed, Git doesn’t store the file again,
+just a link to the previous identical file it has already stored. Git thinks about its data more like a
+stream of snapshots.</p>
+<p class="style">This is an important distinction between Git and nearly all other VCSs. It makes Git reconsider
+almost every aspect of version control that most other systems copied from the previous
+generation. This makes Git more like a mini filesystem with some incredibly powerful tools built on
+top of it, rather than simply a VCS. We’ll explore some of the benefits you gain by thinking of your
+data this way when we cover Git branching in Git Branching.</p>
+</body>
+</html>
