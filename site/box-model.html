@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Box Model</title>
+	<style>
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			margin: 0;
+			padding: 0;
+			background-color: grey;
+		}
+
+		#box {
+			background-color: blue;
+			padding: 10px 10px 10px 10px;
+			border: 5px solid black;
+			margin-top: 50px;
+			height: 80px;
+			width: 300px;
+			overflow: auto;
+			
+		}
+
+		#content {
+			background-color: #90EE90; //green
+		}
+		h1{
+			margin-bottom: 30px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Box Model</h1>
+
+	<div id="box">
+		<div id="content">
+			This is a box model illustration by Aniket Singh, from Dumka, Jharkhand, India. This is a box model illustration by Aniket Singh, from Dumka, Jharkhand, India1. This is a box model illustration by Aniket Singh, from Dumka, Jharkhand, India2. This is a box model illustration by Aniket Singh, from Dumka, Jharkhand, India3. This is a box model illustration by Aniket Singh, from Dumka, Jharkhand, India4.
+		</div>
+
+		<!-- padding : top right bottom left -->
+		<!-- border-box is the recommended sizing mode. content-box is the less used one. Also, box-sizing cannot be inherited unless used with * selector -->
+		<!-- * selector applies it's properties to every css element of that page -->
+	</div>
+</body>
+</html>
