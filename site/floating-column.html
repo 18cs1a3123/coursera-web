@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Floating Columns</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            h1{
+                text-decoration-line: underline;
+                margin-left: 10px;
+            }
+            h2{
+                margin-left: 10px;
+                text-decoration: underline;
+                text-transform: capitalize;
+                color: teal;
+            }
+        div{
+            margin: 10px;
+            /*background-color: thistle;*/
+        }
+        p{
+           /* border: 1px solid black;*/
+            width: 50%;
+            float: left;
+            padding: 15px;
+        }
+        section{
+            clear: both;
+        }
+        #p1{
+           /* background-color: maroon;*/
+        }
+        #p2{
+           /* background-color: mediumturquoise;*/
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Two column designs</h1>
+        <h2>The command line</h2>
+        <div>
+            <p id="p1">There are a lot of different ways to use Git. There are the original command-line tools, and there
+                are many graphical user interfaces of varying capabilities. For this book, we will be using Git on the
+                command line. For one, the command line is the only place you can run all Git commands — most
+                of the GUIs implement only a partial subset of Git functionality for simplicity. If you know how to
+                run the command-line version, you can probably also figure out how to run the GUI version, while
+                the opposite is not necessarily true. Also, while your choice of graphical client is a matter of
+                personal taste, all users will have the command-line tools installed and available.</p>
+            <p id="p2">So we will expect you to know how to open Terminal in macOS or Command Prompt or PowerShell
+                in Windows. If you don’t know what we’re talking about here, you may need to stop and research
+                that quickly so that you can follow the rest of the examples and descriptions in this book.</p>
+            <section>A section starting right after p tag inside div</section>
+        </div>
+    </body>
+</html>
